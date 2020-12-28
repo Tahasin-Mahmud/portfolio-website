@@ -100,3 +100,29 @@ body {
   transition: 1s;
   filter: brightness(10%);
 }
+
+.two-column-wrapper {
+  display: flex;
+  //grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img{
+  width: 60%;
+  height: 50%;
+  margin-left: 8%;
+  margin-top: 5%;
+}
+
+.profile-image-wrapper{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-content-wrapper h1 {
+  color: lightseagreen;
+}
+
+.profile-content-wrapper {
+  margin: 20px;
+}

@@ -10,7 +10,7 @@
     <div class="nav-wrapper">
 
       <div class="left-side">
-        <div class="nav-link-wrapper">
+        <div class="nav-link-wrapper active-nav-link">
           <a href="index.html">Home</a>
         </div>
         <div class="nav-link-wrapper">
@@ -119,12 +119,11 @@ const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
   portfolioItems.forEach(portfolioItem => {
     portfolioItem.addEventListener('mouseover', () => {
       console.log(portfolioItem.childNodes[1].classList)
-      portfolioItem.childNodes[1].classList.add('image-blur');
+      portfolioItem.childNodes[1].classList.add('img-darken');
     });
-
     portfolioItem.addEventListener('mouseout', () => {
       console.log(portfolioItem.childNodes[1].classList)
-      portfolioItem.childNodes[1].classList.remove('image-blur');
+      portfolioItem.childNodes[1].classList.remove('img-darken');
     });
   });
 </script>
